@@ -199,7 +199,7 @@ class DateRangeFilter(BaseRangeFilter):
                     self.lookup_kwarg_gte,
                     forms.DateField(
                         label="",
-                        widget=AdminSplitDateTime(attrs={"placeholder": _("From date")}),
+                        widget=AdminDateWidget(attrs={"placeholder": _("From date")}),
                         localize=True,
                         required=False,
                         initial=self.default_gte,
